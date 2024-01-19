@@ -12,78 +12,110 @@ body {
 
 /* Add styles here! */
 
-header {
-  min-height: 50%;
-  
+.max-width-wrapper:first-child {
+  min-height: 40%;
+}
 
-} 
+.max-width-wrapper:last-child {
+  min-height: 42%;
+  padding-top: 64px;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header {
+  border-bottom: solid 8px hsl(0deg, 0%, 60%);
+}
 
 strong {
   color: hsl(160deg, 100%, 30%);
 }
 
 .intro-chunk {
-  padding-top: 64px;
+  /* padding-top: 64px;
   padding-left: 24px;
   padding-right: 544px;
-  max-width: 55%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 55%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding-top: 96px;
+  padding-bottom: 128px;
+  max-width: 415px;
 
 }
 
-.intro-chunk > h1 {
-  font-size: 1.75rem;
-  margin-bottom: 64px;
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
 }
 
-.intro-chunk > p {
+p {
   font-size: 1.25rem;
-  margin-bottom: 32px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
 
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 .card {
-  min-height: 35%;
-  max-width: 55%;
-  padding-right: 8px;
+  /* min-height: 35%;
+  max-width: 55%; */
+  /* padding-right: 8px;
   padding-left: 8px;
-  padding-top: 8px;
+  padding-top: 8px; */
   background-color: hsl(0deg, 0%, 100%);
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 8px hsl(0deg, 0%, 60%);
+ /*  margin-left: auto;
+  margin-right: auto; */
+  border-bottom: solid 8px hsl(0deg, 0%, 60%);
+  padding: 24px;
+  margin: 0 -24;  /* cancel each other out to restore alignment */
+  
 
 }
 
 .indented-heading {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 16px 32px;
   background-color: hsl(45deg, 100%, 50%);
-  max-width: 500px;
+  margin-left: -32px; /*alignment */
+  margin-top: -16px;  /* 24px of .card padding - 16px to make 8px */
+  margin-bottom: 1rem; /* rem because readability, close to text */
+  /* max-width: 500px;
   height: 60px;
   padding-left: 32px;
   margin-left: -16px;
   margin-top: 0;
-  padding-top: 16px;
-  box-shadow: 0 8px hsl(45deg, 100%, 40%);
+  padding-top: 16px; */
+  border-bottom: solid 8px hsl(45deg, 100%, 40%);
+  width: fit-content;
   
 }
 
 .card > p {
   font-size: 1.25rem;
-  margin: 0;
-  padding: 16px;
+  /* margin: 0;
+  padding: 16px; */
   
 }
 
-section {
- /*  background-color: hsl(0deg, 0%, 40%); */
-  /* min-height: 60%; */
-  box-shadow: 0 -8px hsl(0deg, 0%, 60%);
-  padding-top: 64px;
-}
+
 
 main {
   background-color: hsl(0deg, 0%, 40%);
-  min-height: 50%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  
+  /* min-height: 50%; */
 }
